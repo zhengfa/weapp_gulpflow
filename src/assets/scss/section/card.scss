@@ -1,0 +1,330 @@
+.app-punching{
+  .section.section-card{
+    &.card-1{
+      display: flex;
+      justify-content:center;
+      background: url("http://assets.guopee.com/img/avatar_bg.png");
+      -webkit-background-size: 100% 100%;
+      background-size: 100% 100%;
+      height:150px;
+      .avatar{
+        width: 100%;
+        text-align: center;
+        color: $font-color-white;
+        margin-top:35px;
+        image{
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          width: 60px;
+          height:60px;
+          @include set-border(2px,$border-color-white)
+        }
+      }
+      view{
+        font-size: 14px;
+      }
+    }
+    &.card-2{
+      margin-bottom: 10px;
+      background-color: $bg-color-white;
+      padding:12px 0px 15px;
+      font-size: 14px;
+      .mui-content-padded{
+        width: 60%;
+        @include margin-center;
+        button{
+          margin:0px;
+          font-size:14px;
+          padding: 3px 0px;
+        }
+        .join-btn{
+          color:$font-color-white;
+          margin-bottom: 12px;
+          background-color:$bg-color-blue6;
+        }
+        .create-btn{
+          span{
+            font-size:24px;
+            position: relative;
+            top:1px;
+            color:$font-color-black;
+          }
+        }
+      }
+      .history-link{
+        margin-top: 20px;
+        span{
+          font-size:16px
+        }
+      }
+      .feedback{
+        margin-top: 30px;
+      }
+      .follow-tips{
+        margin-top:50px;
+      }
+    }
+    &.card-3{
+      .mui-table-view{
+        margin-top: 0px;
+        background-color: $bg-color-white;
+        &:before{
+          height:0px;
+        }
+        &:after{
+          height:0px;
+        }
+        .mui-table-view-cell{
+          padding: 0px 12px;
+          navigator{
+            padding: 12px 0px;
+            display:flex;
+            flex-direction: row;
+            border-bottom: 1px solid #e7e7e7;
+            .mui-media-object{
+              width: 150px;
+              height:100px;
+              max-width: inherit;
+              margin-right:10px;
+            }
+            .mui-media-body{
+              width: 185px;
+              overflow: auto;
+              white-space:normal;
+              .title{
+                height: 42px;
+                color:$font-color-black;
+                font-size: $xl-font-size;
+              }
+              .tag{
+                @include set-border(1px,$bg-color-orange4);
+                color: $font-color-orange1;
+                display: inline-block;
+                padding: 2px 4px;
+                border-radius: 2px;
+                margin-top: 10px;
+                font-size:$s-font-size;
+              }
+              .live{
+                margin-top: 10px;
+                view{
+                  @include float(left);
+                  font-size:$s-font-size;
+                  padding-right: 20px;
+                  color: $font-color-gray;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.card-4{
+      background-color: $bg-color-white;
+      .mui-content-padded{
+        display:flex;
+        margin-bottom: 7px;
+        padding: 10px;
+        margin:0px;
+        flex-wrap:wrap;
+        button{
+          width:80px;
+          margin-top: 10px;
+          font-size:$l-font-size;
+        }
+      }
+    }
+    &.card-5{
+      background-color: $bg-color-white;
+      padding: 10px 0px;
+      .mui-table-view{
+        margin-top: 0px;
+        .mui-table-view-cell{
+          navigator{
+            @include set-border(1px,$line-color-light-gray);
+            padding: 9px 11px;
+            margin: 0px 10px 10px;
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            &:after{
+              height:0px;
+            }
+            .mui-media-object{
+              width: 40px;
+              height:40px;
+              max-width: inherit;
+              margin-right: 10px;
+            }
+            .mui-media-body{
+              width: 220px;
+              overflow: auto;
+              white-space:normal;
+              margin-right: 10px;
+              .title{
+                color:$font-color-black;
+                font-size:$l-font-size;
+              }
+              .tag{
+                @include set-border(1px,$bg-color-orange4);
+                color: $font-color-orange1;
+                display: inline-block;
+                padding: 2px 4px;
+                border-radius: 2px;
+                margin-top: 10px;
+                font-size:$s-font-size;
+              }
+              .live{
+                @include float();
+                view{
+                  @include float(left);
+                  font-size:$s-font-size;
+                  margin-right: 20px;
+                  color: $font-color-gray;
+                }
+              }
+            }
+            .mui-media-option{
+              align-self:center;
+              width: 60px;
+              button{
+                font-size:$l-font-size;
+                width: 100%;
+                background-color: $bg-color-blue6;
+                @include set-border(1px,$bg-color-blue6);
+                font-size:14px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.card-6{
+      background-color: $bg-color-white;
+      margin-bottom: $space-margin-bottom2;
+        .title-img{
+          position: relative;
+          padding: 0px;
+          margin:0px;
+          image{
+            width: 100%;
+          }
+          .share-link{
+            position: absolute;
+            top:10px;
+            right:10px;
+            background-color: $bg-color-black7;
+            border-radius: 20px;
+            padding:3px 10px 4px;
+            color:$font-color-white;
+            opacity: 0.9;
+            .mui-icon{
+              font-size:18px;
+            }
+
+          }
+        }
+        .title{
+          padding:0px 12px;
+          font-size:20px;
+          color: $font-color-black;
+          line-height: 33px;
+          letter-spacing: 1px;
+        }
+        .live{
+          display:flex;
+          margin:10px;
+          padding-bottom: 15px;
+          .avatar{
+            display:flex;
+            align-items: center;
+            height:33px;
+            width: 27%;
+            image{
+              width: 30px;
+              height: 30px;
+              margin-right:-6px;
+              border-radius: 50%;
+              @include set-border(2px,$bg-color-white);
+            }
+          }
+          .takened{
+            height:33px;
+            display:flex;
+            align-items: center;
+            width: 73%;
+            .nickname{
+              font-size: $m-font-size;
+              width: 10%;
+              @include text-wrap;
+            }
+            .num{
+              font-size: $m-font-size;
+                @include text-space-line;
+            }
+            .checked{
+              font-size: $m-font-size;
+              margin-left: 20px;
+            }
+          }
+        }
+
+    }
+    &.card-7{
+      background-color: $bg-color-white;
+      margin-bottom: $space-margin-bottom2;
+      .mui-content-padded{
+        margin:0px;
+        padding:12px 10px;
+        .title{
+          font-size: $xxxl-font-size;
+          color:$font-color-black;
+          margin-bottom: $space-margin-bottom6;
+        }
+        .content{
+          img{max-width: 100%;}
+        }
+      }
+    }
+    &.card-8{
+      background-color: $bg-color-white;
+      margin-bottom: $space-margin-bottom2;
+      .mui-content-padded{
+        margin:0px;
+        padding:12px 12px;
+        .title{
+          font-size: $xxxl-font-size;
+          color:$font-color-black;
+          margin-bottom: $space-margin-bottom6;
+        }
+        .author{
+          display:flex;
+          align-items: center;
+          margin-bottom: $space-margin-bottom2;
+          font-size: $xxxl-font-size;
+          .avatar{
+            image{
+              width:40px;
+              height:40px;
+              border-radius: 50%;
+            }
+          }
+        }
+        .content{
+          height: 60px;
+          overflow: hidden;
+          font-size:14px;
+          image{max-width: 100%;}
+        }
+        .more{
+          display: flex;
+          justify-content: center;
+          color:$font-color-blue7;
+          margin-top:5px;
+          font-size:14px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+/**
+ * ------------------------------------------------------------------
+ * app.scss 入口文件
+ *
+ * ------------------------------------------------------------------
+ *
+ * @author  JeffMa
+ * @link    https://devework.com/
+ * @data    2017-06-11
+ */
+
+// 支持文件
+@import "assets/scss/support",'assets/scss/utils';
+
+// 雪碧图
+@lazysprite "filetype";
+
+@import
+"assets/scss/var",
+"assets/scss/mixins",
+"assets/scss/entry",
+"assets/scss/section/card",
+"assets/scss/section/footer",
+"assets/scss/section/form",
+"assets/scss/section/title",
+"assets/scss/section/button";

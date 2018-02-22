@@ -1,0 +1,39 @@
+<view class="mui-content section section-card card-4">
+    <view class="mui-content-padded">
+
+        <button type="default">
+            全部
+        </button>
+        <button type="default">
+            阅读
+        </button>
+
+        <button type="default">
+            外语
+        </button>
+
+        <button type="default">
+            亲子
+        </button>
+
+        <button type="default">
+            技能
+        </button>
+
+        <button type="default">
+            习惯
+        </button>
+
+        <button type="default">
+            运动
+        </button>
+
+        <button type="default">
+            艺术
+        </button>
+
+
+
+
+    </view>
+</view>

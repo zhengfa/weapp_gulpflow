@@ -1,0 +1,4 @@
+<view class="app-punching">
+    @@include('../../section/card/card-4.wxml')
+    @@include('../../section/card/card-3.wxml')
+</view>

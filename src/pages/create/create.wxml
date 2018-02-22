@@ -1,0 +1,10 @@
+<view class="app-punching">
+@@include('../../section/card/card-1.wxml')
+@@include('../../section/card/card-2.wxml')
+<!--@@include('../section/title/title-2.html')
+@@include('../section/card/card-5.html')-->
+@@include('../../section/title/title-1.wxml')
+@@include('../../section/card/card-3.wxml')
+@@include('../../section/button/button-1.wxml',{"title":"发现更多精彩 >>"})
+@@include('../../section/footer/footer-1.wxml')
+</view>

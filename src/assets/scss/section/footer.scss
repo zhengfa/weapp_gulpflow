@@ -1,0 +1,11 @@
+.app-punching{
+  .section.section-footer {
+    &.footer-1{
+      background-color: $bg-color-white;
+      display: flex;
+      justify-content: center;
+      font-size:12px;
+      padding:20px;
+    }
+  }
+}

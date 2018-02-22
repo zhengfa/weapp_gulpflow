@@ -1,0 +1,36 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/category/category",
+        "pages/event/event",
+        "pages/more/more",
+        "pages/home/home",
+        "pages/create/create"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "果皮",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#7A7E83",
+        "selectedColor": "#CF4646",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "image/home_D.png",
+                "selectedIconPath": "image/home.png",
+                "text": "介绍"
+            },
+            {
+                "pagePath": "pages/category/category",
+                "iconPath": "image/set_D.png",
+                "selectedIconPath": "image/set.png",
+                "text": "更多"
+            }
+        ]
+    }
+}

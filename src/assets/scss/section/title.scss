@@ -1,0 +1,36 @@
+.app-punching {
+  .section.section-title {
+    &.title-1{
+      background-color: $bg-color-white;
+      .mui-content-padded{
+        padding: 10px 10px 0px 10px;
+        margin:0px;
+        font-size:$l-font-size;
+        position: relative;
+        color: $font-color-black;
+      }
+    }
+    &.title-2{
+      background-color: $bg-color-white;
+      .mui-content-padded{
+        padding:10px 10px 0px 5px;
+        margin:0px;
+        .create_punching{
+          color:$font-color-blue7;
+          span{
+            font-size:22px;
+            font-weight: bold;
+            color:$font-color-blue7;
+            position: relative;
+            top:1px;
+          }
+        }
+        .delete_punching{
+          span{
+            font-size:22px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.app-punching {
+  .section.section-button{
+    &.button-1{
+      background-color: $bg-color-white;
+      display:flex;
+      padding-top:20px;
+        button{
+          background-color: $bg-color-white;
+          color: $font-color-blue7;
+          @include set-border(1px,$bg-color-blue6);
+          margin-bottom: 0px;
+          font-size:14px;
+          width: 90%;
+      }
+    }
+    &.button-2{
+      background-color: $bg-color-white;
+      .mui-content-padded{
+        margin:0px 10px;
+        padding:30px 0px;
+        button{
+          width: 70%;
+          @include margin-center;
+          background-color: $bg-color-blue7;
+          color:$font-color-white;
+          @include set-border(1px,$bg-color-blue7);
+          padding: 8px 0px;
+          margin-bottom: 0px;
+        }
+      }
+    }
+    &.button-3 {
+      position: fixed;
+      bottom: 0px;
+      display:flex;
+      width: 100%;
+      button{
+        @include margin-center;
+        color:$font-color-white;
+        margin-bottom: 0px;
+        border-radius: 0;
+        border:none;
+      }
+      .enroll-btn{
+        width: 86.66666666666667%;
+        background-color: $bg-color-blue7;
+      }
+      .report-btn{
+        width: 53px;
+        background-color: $bg-color-blue8;
+        i{
+          color: $font-color-white;
+          font-size:18px;
+          font-weight: normal;
+        }
+      }
+      .report-pop{
+        position: absolute;
+        right:7px;
+        top:-120px;
+        button{
+          background-color: $bg-color-black;
+          @include set-border(1px,$bg-color-black);
+          padding:10px 12px;
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          border-radius: 3px;
+          font-size:$s-font-size;
+          margin-bottom: $space-margin-bottom;
+          opacity:0.8;
+        }
+      }
+    }
+  }
+}

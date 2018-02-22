@@ -1,0 +1,10 @@
+<view class="mui-content section section-form form-3">
+    <view class="mui-table-view">
+        <view class="mui-table-view-cell">
+            <view class="title">@@title</view>
+            <view class="mui-switch mui-switch-blue mui-switch-mini">
+                <view class="mui-switch-handle"></view>
+            </view>
+        </view>
+    </view>
+</view>

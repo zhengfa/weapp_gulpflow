@@ -1,0 +1,169 @@
+/**
+ * ------------------------------------------------------------------
+ * Sass Minxins
+ *
+ * 参考收集：
+ * https://github.com/twbs/bootstrap-sass/tree/master/assets/stylesheets/bootstrap/mixins
+ * ------------------------------------------------------------------
+ *
+ * @author  JeffMa
+ * @link    https://devework.com/
+ * @data    2017-06-11
+ */
+
+// 文字截取
+@mixin text-overflow() {
+	overflow: hidden;
+	white-space: normal;
+	text-overflow: ellipsis;
+	word-break: break-all;
+	word-wrap: normal;
+}
+
+@mixin word-break() {
+	word-break: break-all;
+	word-wrap: break-word;
+	white-space: normal;
+}
+
+// No wrap
+@mixin no-wrap() {
+	word-break: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+}
+
+// 清除浮动
+@mixin clearfix() {
+	&:before,
+	&:after {
+		content: " "; // 1
+		display: table; // 2
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+// Single side border-radius
+@mixin border-top-radius($radius) {
+	border-top-right-radius: $radius;
+	border-top-left-radius: $radius;
+}
+
+@mixin border-right-radius($radius) {
+	border-bottom-right-radius: $radius;
+	border-top-right-radius: $radius;
+}
+
+@mixin border-bottom-radius($radius) {
+	border-bottom-right-radius: $radius;
+	border-bottom-left-radius: $radius;
+}
+
+@mixin border-left-radius($radius) {
+	border-bottom-left-radius: $radius;
+	border-top-left-radius: $radius;
+}
+
+// Center-align a block level element
+@mixin center-block() {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// CSS image replacement
+// Source: https://github.com/h5bp/html5-boilerplate/commit/aa0396eae757
+@mixin hide-text() {
+	font-size: 0;
+	line-height: 0;
+	color: transparent;
+	text-shadow: none;
+	background-color: transparent;
+	border: 0;
+}
+
+
+/**
+375px  14px
+1rem = 625%*16px = 100px
+14px = .14rem
+
+414px根据屏幕等比缩放
+percent = (414/375*625)
+
+html的font-size = (屏幕宽度/(750/2)*(100/16))%
+
+以iphone6 为基准
+
+$rem-size-default 默认的1rem = 100px
+$font-size-default 默认的字体大小 16px
+
+$screen-width:屏幕宽度
+$ui-design-width-default: ui默认尺寸  750设计图
+$device-pixel-ratio: 像素倍数2
+
+
+ */
+@function screen-font-size($screen-width, $percent : true) {
+	@if ($percent) {
+		//支持浏览器改字体
+		@return percentage(($rem-size-default / $font-size-default)*($screen-width/($ui-design-width-default / $device-pixel-ratio)))
+	} @else {
+		//不支持浏览器改字体
+		@return 0px + (($rem-size-default)*($screen-width/($ui-design-width-default / $device-pixel-ratio)))
+	}
+}
+
+@function rem($px, $screen-width : $screen-width-default) {
+	@if (type-of($px) != 'number') {
+		@return $px;
+	} @else {
+		@if (unit($px) == '') {
+			@return 1rem * (($px /$rem-size-default) * ($screen-width / ($ui-design-width / $device-pixel-ratio)));
+		} @else if (unit($px) == 'px') {
+			@return 1rem * (($px /$rem-size-default) * ($screen-width / ($ui-design-width / $device-pixel-ratio))) / 1px;
+		} @else {
+			@return $px;
+		}
+	}
+}
+
+//设置边框
+@mixin set-border($width,$color) {
+	border:solid $width $color;
+}
+
+@mixin margin-center{
+	margin:0 auto;
+}
+
+@mixin float($float:left){
+	float: $float;
+}
+
+@mixin form-title{
+	padding: rem(10) rem(0);
+	color:$font-color-black;
+}
+
+@mixin text-wrap{
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+@mixin text-space-line(){
+	position: relative;
+	&:after{
+		content: '';
+		display: block;
+		position: absolute;
+		border-right: rem(1) solid $line-color-light-gray5;
+		margin-left:rem(10);
+		height:rem(10);
+		right:rem(-10);
+		top:rem(4);
+	}
+}

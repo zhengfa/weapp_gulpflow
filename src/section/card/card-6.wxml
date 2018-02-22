@@ -1,0 +1,23 @@
+<view class="mui-content section section-card card-6">
+    <view class="mui-content-padded title-img">
+        <image src="http://assets.guopee.com/img/title_img.jpg"></image>
+        <view class="share-link"><view class="mui-icon mui-icon-redo"></view>邀请好友</view>
+    </view>
+    <view class="mui-content-padded title">
+        声临其境 | 央视配音咖陪你诵读经典美文
+    </view>
+    <view class="mui-content-padded live">
+        <view class="avatar">
+            <image src="http://assets.guopee.com/img/thumb1.jpg"></image>
+            <image src="http://assets.guopee.com/img/thumb2.jpg"></image>
+            <image src="http://assets.guopee.com/img/thumb3.jpg"></image>
+        </view>
+        <view class="takened">
+            <view class="nickname">黄种人</view>
+            <view class="num">
+                等1795人已参加
+            </view>
+            <view class="checked">19522次打卡</view>
+        </view>
+    </view>
+</view>

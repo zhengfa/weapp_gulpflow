@@ -1,0 +1,6 @@
+<view class="app-punching">
+@@include('../../section/card/card-6.wxml')
+@@include('../../section/card/card-7.wxml')
+@@include('../../section/card/card-8.wxml')
+@@include('../../section/button/button-3.wxml',{"title":"立即报名"})
+</view>

@@ -1,0 +1,6 @@
+<view class="section section-card card-1">
+    <view class="avatar">
+        <image src="http://assets.guopee.com/img/avatar.jpg"></image>
+        <view>吃素的蚊子</view>
+    </view>
+</view>
